@@ -2,7 +2,7 @@
 My big file of javascript
 */
 
-var carArray = ["car-blue.png", "greencar.png", "pink.png", "car-red.png", "yellacar.png"];
+var carArray = ["car-blue.png", "greencar.png", "pink.png", "carred.png", "yellacar.png"];
 
 function changeCar() {
 	var banger = carArray[Math.floor(Math.random() * carArray.length)];
@@ -35,7 +35,7 @@ function calculateCarValue(form) {
 	
 	// If the car is 5 or more years we want it
 	// More cheap stock is what we need!
-	if(carAge == 5 || carAge > 5){
+	if(carAge = 5 || carAge > 5){
 		window.alert("I would be happy to take this rust bucket car off your hands. It's too old if it's " + carAge + " years old.");
 		return;
 	}
