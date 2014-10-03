@@ -29,24 +29,25 @@ function calculateCarValue(form) {
 	var purchasePrice = form.carPurchasePrice.value;
 	var carAge = form.carAge.value;
 	
-	if(carAge <= 2) value = calculateCarPrice(purchasePrice, 2);
-	if(carAge == 3) value = calculateCarPrice(purchasePrice, 3);
-	if(carAge == 4) value = calculateCarPrice(purchasePrice, 4);
+	if(carAge <= 5) value = calculateCarPrice(purchasePrice, 5);
+	if(carAge == 6) value = calculateCarPrice(purchasePrice, 6);
+	if(carAge == 7) value = calculateCarPrice(purchasePrice, 7);
+	if(carAge >= 8) value = calculateCarPrice(purchasePrice, 8);
 	
 	// If the car is 5 or more years we want it
 	// More cheap stock is what we need!
-	if(carAge = 5 || carAge > 5){
-		window.alert("I would be happy to take this rust bucket car off your hands. It's too old if it's " + carAge + " years old.");
-		return;
+	if(carAge < 5){
+		window.alert("It's too young if it's " + carAge + " years old.");
+	}else{
+		window.alert('We would be happy to offer you \u00a3' + Math.round(value) + " for your lovely car!");
 	}
-	
-	window.alert('We would be happy to offer you \u00a3' + Math.round(value) + " for your lovely car!");
+	return;
 }
 
 function calculateCarPrice(purchasePrice, carAge){
 	
 	// I think this was meant to be at 10% not 1000%. We might make some money then.
-	var pruchaseRate = 1000;
+	var pruchaseRate = 100;
 	
 	var value = ((purchasePrice / 100) * pruchaseRate) * (1 / carAge);
 	return value;
@@ -101,9 +102,6 @@ function numberWithCommas(number) {
 // PLEASE MAKE THIS
 // I don't want people being able to save pictures of our hot rod stock
 // If they want to see our cars they have to buy them first
-function disableRightClick() {
-	
-}
 
 
 

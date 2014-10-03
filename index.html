@@ -13,7 +13,7 @@
 		</script>
 	</head>
 	
-	<body onload="startTimer()" style="background-color: #FFFFCC;">
+	<body onload="startTimer()" style="background-color: #FFFFCC;" oncontextmenu="return false">
 		<div style="width: 900px; margin: 0 auto">
 			
 			
@@ -101,7 +101,7 @@
 					<input type="submit" value="Calculate your loan" onClick="calculateLoan()">
 					<br/><br/>
 					<span id="borrowTotalMonthly" style="display: none; font-size: 24px; color: red;"></span><br/>
-					<span class="borrowTotal" style="display: none; font-size: 24px; color: red;"></span>
+					<span id="borrowTotal" style="display: none; font-size: 24px; color: red;"></span>
 				</div>
 				
 				
