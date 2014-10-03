@@ -2,7 +2,7 @@
 My big file of javascript
 */
 
-var carArray = new Array('car-blue.png',"greencar.png",'pink.png','carred.png' "yella-car.png");
+var carArray = ["car-blue.png", "greencar.png", "pink.png", "carred.png", "yella-car.png"];
 
 function changeCar() {
 	var banger = carArray[Math.floor(Math.random() * carArray.length)];
@@ -16,7 +16,7 @@ function startTimer() {
 	// later I want to add some more automated stuff
 }
 
-var motdArray = new Array('It's a great day to sell cars!', "Welcome to Bodys Used Motors. The finest cars left!", "Today is "SALE FEVER" day!!!", 'A name you can surely trust!');
+var motdArray = ["It's a great day to sell cars!", "Welcome to Bodys Used Motors. The finest cars left!", "Today is 'SALE FEVER' day!!!", "A name you can surely trust!"];
 
 // The important message of the day (motd)
 function changeMotd(){
