@@ -2,7 +2,7 @@
 My big file of javascript
 */
 
-var carArray = ["car-blue.png", "greencar.png", "pink.png", "carred.png", "yellacar.png"];
+var carArray = ["car-blue.png", "greencar.png", "pink.png", "car-red.png", "yellacar.png"];
 
 function changeCar() {
 	var banger = carArray[Math.floor(Math.random() * carArray.length)];
